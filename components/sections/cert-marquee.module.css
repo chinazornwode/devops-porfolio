@@ -5,8 +5,14 @@
 .track {
   display: flex;
   gap: 1rem;
+  flex-wrap: nowrap;
+  min-width: max-content;
   will-change: transform;
   animation: marquee var(--speed, 28s) linear infinite;
+}
+
+.item {
+  flex: 0 0 auto;
 }
 .container::before,
 .container::after {
@@ -31,6 +37,6 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(calc(-100% / 3));
   }
 }

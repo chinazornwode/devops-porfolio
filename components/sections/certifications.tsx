@@ -32,17 +32,16 @@ const baseCerts: Cert[] = [
 ]
 
 export default function Certifications({ items = baseCerts }: { items?: Cert[] }) {
-  const originalLen = items.length
-  const loopItems = [...items, ...items] // duplicate for seamless scroll
+  // Create enough duplicates for seamless infinite scrolling
+  const loopItems = [...items, ...items, ...items]
 
   return (
     <div className={`relative ${styles.container}`}>
-      <div className={styles.track} style={{ ["--speed" as any]: "28s" }}>
+      <div className={styles.track} style={{ ["--speed" as any]: "40s" }}>
         {loopItems.map((c, i) => (
           <div
-            key={`${c.title}-${i}`}
-            aria-hidden={i >= originalLen ? true : undefined}
-            className="min-w-[300px] max-w-[300px] rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-4"
+            key={`cert-${i}-${c.title.replace(/\s+/g, '-')}`}
+            className={`min-w-[300px] max-w-[300px] rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-4 ${styles.item}`}
           >
             <div className="h-24 w-full rounded-lg bg-[radial-gradient(circle_at_30%_30%,rgba(0,255,255,0.18),rgba(160,32,240,0.18)_45%,rgba(255,255,255,0.04)_65%)] border border-white/10" />
             <div className="mt-3">
