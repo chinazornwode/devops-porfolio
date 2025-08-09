@@ -1,0 +1,59 @@
+// components/hero.tsx
+import React from "react";
+import { Download } from 'lucide-react';
+
+const Hero = () => {
+  return (
+    <div>
+      {/* Direct download with icon for the latest uploaded resume */}
+      <a
+        href="/resume/chinazor-nwode-resume.pdf"
+        download
+        className="inline-flex items-center gap-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 px-5 py-3 text-zinc-200 transition"
+      >
+        <Download className="h-5 w-5" />
+        {"Download Resume"}
+      </a>
+      {/* Other components here */}
+    </div>
+  );
+};
+
+export default Hero;
+
+// components/sections/cert-marquee.module.css
+.container {
+  /* Existing styles here */
+}
+
+.track {
+  /* Existing animation styles here */
+}
+
+.container:hover .track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none;
+    transform: translateX(0);
+  }
+}
+
+// app/resume/page.tsx
+import React from "react";
+
+const ResumePage = () => {
+  return (
+    <div>
+      <iframe src="/resume/chinazor-nwode-resume.pdf#view=FitH" title="Resume PDF" className="h-[80vh] w-full" />
+      {/* Other components here */}
+      <a href="/resume/chinazor-nwode-resume.pdf" target="_blank" rel="noreferrer" className="text-cyan-300 hover:underline">
+        {"open it in a new tab"}
+      </a>
+    </div>
+  );
+};
+
+export default ResumePage;

@@ -1,0 +1,36 @@
+.container {
+  position: relative;
+  overflow: hidden;
+}
+.track {
+  display: flex;
+  gap: 1rem;
+  will-change: transform;
+  animation: marquee var(--speed, 28s) linear infinite;
+}
+.container::before,
+.container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 96px;
+  pointer-events: none;
+  z-index: 10;
+}
+.container::before {
+  left: 0;
+  background: linear-gradient(to right, #0b0e11, transparent);
+}
+.container::after {
+  right: 0;
+  background: linear-gradient(to left, #0b0e11, transparent);
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
