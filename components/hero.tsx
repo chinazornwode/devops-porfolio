@@ -7,7 +7,7 @@ import Image from "next/image"
 import LightRays from "@/components/light-rays"
 import SplitTagline from "@/components/typography/split-tagline"
 import TypewriterText from "@/components/typography/typewriter-text"
-import { Download } from "lucide-react" // Import the Download icon
+import { Download, Eye } from "lucide-react" // Import the Download and Eye icons
 
 export default function Hero() {
   const heroRef = useRef<HTMLDivElement>(null)
@@ -87,7 +87,17 @@ export default function Hero() {
                 {"View Projects"}
               </a>
 
-              {/* Direct download only with icon */}
+              {/* View and Download Resume buttons */}
+              <a
+                href="/pdf/resume.resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-xl bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-200 border border-cyan-400/30 px-5 py-3 transition"
+              >
+                <Eye className="h-5 w-5" />
+                {"View Resume"}
+              </a>
+
               <a
                 href="/pdf/resume.resume.pdf"
                 download
