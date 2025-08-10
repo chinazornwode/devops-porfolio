@@ -20,7 +20,7 @@ export default function Contact() {
         <span>{"LinkedIn"}</span>
       </a>
       <a
-        href="https://github.com/chinazornwode/flexbank"
+        href="https://github.com/chinazornwode"
         className="inline-flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-5 py-3 text-zinc-100 hover:bg-cyan-400/10 hover:border-cyan-400/40 transition backdrop-blur"
       >
         <Github className="h-5 w-5 text-cyan-300" />
