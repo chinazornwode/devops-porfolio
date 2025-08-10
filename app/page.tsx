@@ -32,7 +32,7 @@ export default function Page() {
   return (
     <main
       ref={containerRef}
-      className={`${mono.variable} font-mono bg-[#0b0e11] text-zinc-200 min-h-screen relative scroll-smooth`}
+      className={`${mono.variable} bg-[#0b0e11] text-zinc-200 min-h-screen relative scroll-smooth`}
     >
       <BlobCursor />
       <Grain />
@@ -120,10 +120,11 @@ export default function Page() {
             <a href="mailto:hello@crowsstack.one" className="hover:text-cyan-300 transition" aria-label="Email">
               <Mail className="h-5 w-5" />
             </a>
-            <a href="#" className="hover:text-cyan-300 transition" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/chinazor-nwode-2ab84a379"   className="hover:text-cyan-300 transition" aria-label="LinkedIn">
               <Linkedin className="h-5 w-5" />
             </a>
-            <a href="#" className="hover:text-cyan-300 transition" aria-label="GitHub">
+            <a href="https://github.com/chinazornwode"
+             className="hover:text-cyan-300 transition" aria-label="GitHub">
               <Github className="h-5 w-5" />
             </a>
           </div>

@@ -9,7 +9,15 @@ type Item = {
 }
 
 const items: Item[] = [
-  { role: "Technical Support Specialist (Contract)", org: "Finnew Fintech", when: "February 2024 – Present" },
+  { 
+    role: "DevOps Engineer" ,
+    org: "Digital Witch Support Community", 
+    when: "June 2024 – Present" 
+  },
+  {
+     role: "Technical Support Specialist (Contract)", 
+    org: "Finnew Fintech", 
+    when: "February 2024 – June 2024" },
   {
     role: "Technical Support Specialist (Freelance)",
     org: "Stansat Electronics and Furniture – Awka",
