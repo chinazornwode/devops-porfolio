@@ -7,7 +7,7 @@ import Image from "next/image"
 import LightRays from "@/components/light-rays"
 import SplitTagline from "@/components/typography/split-tagline"
 import TypewriterText from "@/components/typography/typewriter-text"
-import { Download, Eye } from "lucide-react" // Import the Download and Eye icons
+import { Download, Eye, Mail, Linkedin, Github } from "lucide-react" // Import the Download, Eye and social icons
 
 export default function Hero() {
   const heroRef = useRef<HTMLDivElement>(null)
@@ -112,6 +112,23 @@ export default function Hero() {
                 className="rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 px-5 py-3 text-zinc-200 transition"
               >
                 {"Contact"}
+              </a>
+            </div>
+
+            {/* Social icons row */}
+            <div className="hero-fade mt-4 flex items-center justify-center md:justify-start gap-3 text-zinc-400">
+              <a href="mailto:hello@crowsstack.one" className="hover:text-cyan-300 transition" aria-label="Email">
+                <Mail className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/chinazor-nwode-2ab84a379"
+                className="hover:text-cyan-300 transition"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
+              <a href="https://github.com/chinazornwode" className="hover:text-cyan-300 transition" aria-label="GitHub">
+                <Github className="h-5 w-5" />
               </a>
             </div>
           </div>
