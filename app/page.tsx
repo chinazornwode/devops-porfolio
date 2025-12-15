@@ -7,6 +7,7 @@ import Hero from "@/components/hero"
 import About from "@/components/sections/about"
 import Skills from "@/components/sections/skills"
 import Projects from "@/components/sections/projects"
+import WebDevProjects from "@/components/sections/web-dev-projects"
 import Certifications from "@/components/sections/certifications"
 import Experience from "@/components/sections/experience"
 import Education from "@/components/sections/education"
@@ -88,6 +89,13 @@ export default function Page() {
         </div>
       </section>
 
+      <section id="web-dev" className="relative py-20 md:py-28 reveal">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <SectionHeading title="Web Development" />
+          <WebDevProjects />
+        </div>
+      </section>
+
       <section id="experience" className="relative py-20 md:py-28 reveal">
         <div className="container mx-auto px-6 max-w-6xl">
           <SectionHeading title="Experience" />
@@ -114,7 +122,7 @@ export default function Page() {
           <p>
             {"© "}
             {new Date().getFullYear()}
-            {" Chinazor Nwode — crowsstack.one"}
+            {" Chinazor Francis — crowsstack.one"}
           </p>
           <div className="flex items-center gap-3">
             <a href="mailto:hello@crowsstack.one" className="hover:text-cyan-300 transition" aria-label="Email">

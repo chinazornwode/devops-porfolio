@@ -65,7 +65,7 @@ export default function Hero() {
             </div>
 
             <h1 className="mt-6 text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] text-zinc-100">
-              <TypewriterText text="Chinazor Nwode" speed={55} cursorColor="#00ffff" />
+              <TypewriterText text="Chinazor Francis" speed={55} cursorColor="#00ffff" />
             </h1>
 
             <div className="mt-4 md:mt-6">
@@ -138,7 +138,7 @@ export default function Hero() {
               <div className="absolute -inset-2 rounded-[24px] bg-[conic-gradient(from_180deg_at_50%_50%,rgba(0,255,255,0.35),rgba(160,32,240,0.35),transparent_70%)] blur-xl" />
               <Image
                 src="/images/chinazor.png"
-                alt="Portrait of Chinazor Nwode"
+                alt="Portrait of Chinazor Francis"
                 width={360}
                 height={360}
                 className="relative z-10 h-[260px] w-[260px] md:h-[320px] md:w-[320px] rounded-2xl object-cover border border-white/15 shadow-[0_0_40px_rgba(0,255,255,0.15),0_0_40px_rgba(160,32,240,0.15)]"

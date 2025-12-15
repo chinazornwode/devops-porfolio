@@ -9,7 +9,7 @@ export default function ResumePage() {
         <header className="flex items-center justify-between">
           <h1 className="text-2xl md:text-3xl font-bold">
             <span className="bg-gradient-to-r from-cyan-300 to-purple-400 bg-clip-text text-transparent">
-              Resume — Chinazor Nwode
+              Resume — Chinazor Francis
             </span>
           </h1>
           <Link
